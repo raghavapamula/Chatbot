@@ -1,0 +1,231 @@
+*{box-sizing: border-box;}
+
+body {
+  background-color: #F2F2F2;
+}
+
+.header {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.title{
+  position: relative;
+  float: left;
+  text-align:left;
+  width: 70%;
+  display: inline;
+  padding-left:25px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+h1 {
+  color: #424242;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  letter-spacing:0.1em;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 35pt;
+  font-variant: small-caps;
+}
+
+.credits{
+  position: relative;
+  float: right;
+  text-align: right;
+  width: 30%;
+  display: inline;
+  padding-right:25px;
+  padding-top:60px;
+  padding-bottom:5px;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  letter-spacing:0.1em;
+  line-height: 145%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.center-box {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+  overflow-y: scroll;
+  padding: 5px;
+  float: right;
+ }
+
+ .submit-box {
+   position:relative;
+   bottom:0;
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+ .row-left {
+   background-color: #ffb6c1;
+   text-align: center;
+   min-width: 55%;
+   padding: 10px;
+   border-radius: 6px;
+   border: 1px solid #ccc;
+   float: left;
+   display:table;
+   display: inline-block;
+   word-break: break-word;
+   float: left;
+   max-width: 75%;
+   padding: 10px;
+ }
+
+ .row-right {
+  background-color: #add8e6;
+  text-align: center;
+  min-width: 55%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  float: right;
+  display: inline-block;
+  word-break: break-word;
+  float: right;
+  max-width: 75%;
+  padding: 10px;
+}
+
+  .row-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.notHidden{
+  visibility:visible;
+  max-width:10%;
+}
+
+.hidden{
+  visibility: hidden;
+  display: inline;
+  max-width:10%;
+}
+
+.left{
+  position: relative;
+  display: inline;
+  float: left;
+}
+
+.right{
+  position: relative;
+  float: right;
+}
+
+/* CSS talk bubble */
+
+.talk-bubble {
+	margin: 3px;
+  display: inline-block;
+  position: relative;
+	height: auto;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+
+/* Left triangle placed top right flush. */
+.tri-left.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  right: auto;
+	left: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-left.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  right: auto;
+	left: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+
+
+/* Top Header Content */
